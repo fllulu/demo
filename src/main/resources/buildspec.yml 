@@ -1,0 +1,15 @@
+branch-defaults:
+  main:
+    environment: null
+    group_suffix: null
+build:
+  commands: mvn clean package
+deploy:
+  artifact: target/demo-1.0.0-SNAPSHOT.war
+global:
+  application_name: demo
+  default_ec2_keyname:demo
+  default_platform: Java 8
+  default_region: eu-central-1
+  profile: demo
+  sc: git
